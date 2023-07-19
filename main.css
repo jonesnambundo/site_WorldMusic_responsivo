@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #192a56;
+    padding: 16px 0;
+    color: antiquewhite;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container ul {
+    display:  flex;
+    gap: 20px;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+header .container li a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+header .container h1 {
+    font-size: 28px;
+    font-style: italic;
+}
+
+/**  Sobre a Loja **/
+
+.sobre-loja {
+    display: flex;
+}
+
+.container .sobre-loja img {
+    max-width: 450px;
+    margin-right: 40px;
+}
+
+section {
+    padding: 40px 0;
+}
+
+section h2 { 
+    margin-bottom: 30px;
+    border-bottom: 1px solid #0d248a;
+    font-style: italic;
+    padding-bottom: 12px;
+}
+
+.item-produtos h3 {
+    margin: 16px 0;
+}
+
+.item-produtos {
+    text-align: center;
+}
+
+.item-produtos img {
+    height: auto;
+    margin-top: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 22.90%);
+    column-gap: 3%;
+}
+
+.item-produtos button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #192a56;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: auto;
+    
+}
+
+.left_arrow {
+    position: absolute;
+    top: 40%;
+    left: 5px;
+    font-size: 5px;
+    z-index: 1;
+    font-size: 30px;
+    color: #353b47;
+    cursor: pointer;
+}
+
+.right_arrow {
+    position: absolute;
+    top: 40%;
+    right: 5px;
+    font-size: 5px;
+    z-index: 1;
+    font-size: 30px;
+    color: #353b47;
+    cursor: pointer;
+}
+
+/** Footer **/
+
+footer {
+    background-color: #192a56;
+    padding: 15px;
+    color: antiquewhite;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* Responsividade **/
+
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 90%;
+    }
+    header .container h1 {
+        font-size: 35px;
+        text-align: center;
+        padding-left: 20px;
+    }
+
+    header .container ul {
+        display: block;
+        list-style: none;
+        text-transform: uppercase;
+        padding: 30px;
+    }
+    
+
+    header .container li a {
+        color: antiquewhite;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    /**  Sobre a Loja **/
+    .sobre-loja {
+        display: block;
+    }
+
+    .container .sobre-loja img {
+        max-width: 100%;
+    }
+    
+    section {
+        padding: 35px 50px;
+    }
+    
+    .about-us h2 {
+        margin-top: 13px;
+    }
+    
+    section h2 { 
+        margin-bottom: 40px;
+        border-bottom: 1px solid #0d248a;
+        font-style: italic;
+        padding-bottom: 13px 0;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    header .container h1 {
+        font-size: 26px;
+        padding-left: 25px;
+        font-style: italic;
+    }
+
+    header .container ul li {
+        padding-right: 22px;
+    }
+    
+    /**  Sobre a Loja **/
+    .sobre-loja {
+        display: block;
+    }
+
+    .container .sobre-loja img {
+        max-width: 100%;
+    }
+    
+    section {
+        padding: 35px 35px;
+    }
+    
+    .about-us h2 {
+        margin-top: 13px;
+    }
+    
+    section h2 { 
+        margin-bottom: 40px;
+        border-bottom: 1px solid #0d248a;
+        font-style: italic;
+        padding-bottom: 13px 0;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+    }
+}

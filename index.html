@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Music</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>World Music</h1>
+            <ul>
+                <li><a href="#sobre-a-loja">Sobre A loja</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="sobre-a-loja">
+        <div class="container">
+            <div class="sobre-loja">
+                <img src="./img/loja musica/worldmusic.jpg" alt="Imagem da loja worldmusic">
+                <div class="about-us">
+                    <h2>Sobre a Loja</h2>
+                    <p>
+                        Welcome to World Music, the music house that will enchant your ears and inspire your soul! Located in the heart of the city, 
+                        we are a unique destination for all music lovers, from experienced musicians 
+                        to enthusiasts who are just beginning to explore this wonderful sonic universe.
+                        At World Music, we are committed to providing an exceptional experience to all our customers. 
+                        Our wide selection of high-quality musical instruments spans everything from electric guitars and grand pianos to professional drums and renowned saxophones. We work only with the best brands in the market, 
+                        ensuring the excellence and durability of the products we offer.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos">
+        <div class="container">
+            <div class="conteudo">
+                <h2>Produtos</h2>
+                <div class="grid-container">
+                    <div class="item-produtos">
+                        <div class="carousel slick">
+                            <img src="./img/AKG PHONE/1.jpg" alt="imagem do Phone AKG Modelo 1">
+                            <img src="./img/AKG PHONE/2.jpg" alt="imagem do Phone AKG Modelo 2">
+                            <img src="./img/AKG PHONE/3.jpg" alt="imagem do Phone AKG Modelo 3">
+                        </div>
+                        <h3>Phone Ouvido Over-Ear AKG K275.</h3>
+                        <strong>R$ 350.00</strong>
+                        <button type="button">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="item-produtos">
+                        <div class="carousel slick">
+                            <img src="./img/Mic PodeMic/1.jpg" alt="imagem do Microfone Rode PodMic 1">
+                            <img src="./img/Mic PodeMic/2.jpg" alt="imagem do Microfone Rode PodMic 2">
+                            <img src="./img/Mic PodeMic/3.jpg" alt="imagem do Microfone Rode PodMic 3">
+                        </div>
+                        <h3>Microfone Rode PodMic Dinâmico </h3>
+                        <strong>R$ 1.040.00</strong>
+                        <button type="button">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="item-produtos">
+                        <div class="carousel slick">
+                            <img src="./img/rodecaster/1.jpg" alt="imagem da Interface de Áudio Rodecaster Pro 2 1">
+                            <img src="./img/rodecaster/2.jpg" alt="imagem da Interface de Áudio Rodecaster Pro 2 2">
+                            <img src="./img/rodecaster/3.jpg" alt="imagem da Interface de Áudio Rodecaster Pro 2 3">
+                        </div>
+                        <h3>Interface De Áudio Rodecaster Pro 2</h3>
+                        <strong>R$ 75.000.00</strong>
+                        <button type="button">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="item-produtos">
+                        <div class="carousel slick">
+                            <img src="./img/Shure MIC/1.jpg" alt="imagem do Shure SM7B Microphone & Focusrite Scarlett 2i2 1">
+                            <img src="./img/Shure MIC/2.jpg" alt="imagem do Shure SM7B Microphone & Focusrite Scarlett 2i2 2">
+                            <img src="./img/Shure MIC/3.jpg" alt="imagem do Shure SM7B Microphone & Focusrite Scarlett 2i2 3">
+                        </div>
+                        <h3>Shure SM7B Mic & Focusrite Scarlett 2i2</h3>
+                        <strong>R$ 3.000.00</strong>
+                        <button type="button">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://kit.fontawesome.com/f2a32344c3.js" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.carousel').slick({
+                prevArrow:'<i class="fa-solid fa-chevron-left left_arrow"></i>',
+                nextArrow:'<i class="fa-solid fa-chevron-right right_arrow"></i>'
+            });
+        });
+    </script>
+</body>
+</html>
